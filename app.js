@@ -26,6 +26,8 @@ function printOdds(count)
         }
     }
 }
+
+printOdds(10);
 // Exercise 2 Section
 console.log("EXERCISE 2:\n==========\n");
 
@@ -59,6 +61,8 @@ function checkAge(userName, age)
         console.log(aboveSixteen)
     }
 }
+
+checkAge(`Eric`, 25);
 
 // Exercise 3 Section
 console.log("EXERCISE 3:\n==========\n");
@@ -95,7 +99,7 @@ function whatQuadrant(x, y)
         console.log(`Quadrant 4`);
     }
 
-    else if (X < 0 && y < 0)
+    else if (x < 0 && y < 0)
     {
         console.log(`Quadrant 3`);
     }
@@ -110,6 +114,11 @@ function whatQuadrant(x, y)
         console.log('No axis or quadrant')
     }
 }
+
+whatQuadrant(1, 1);
+whatQuadrant(-1, 1);
+whatQuadrant(1, -1);
+whatQuadrant(-1, -1);
 
 // Exercise 4 Section
 console.log("EXERCISE 4:\n==========\n");
@@ -145,6 +154,11 @@ function isATriangle(a, b, c)
     }
             
 }
+
+isATriangle(25, 25, 25);
+isATriangle(15, 30, 20);
+isATriangle(22, 30, 15);
+isATriangle(25, 25, 45);
 
 
 // Exercise 5 Section
@@ -200,3 +214,8 @@ function cellPlan(planLimit, day, usage)
     }
 
 }
+
+cellPlan(2200, 15, 1458);
+cellPlan(2200, 10, 200);
+cellPlan(2200, 29, 2200);
+cellPlan(2200, 27, 2350);
